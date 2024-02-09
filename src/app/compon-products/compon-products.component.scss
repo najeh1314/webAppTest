@@ -1,0 +1,8 @@
+.sticky-top {
+    position: sticky;
+    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Assurez-vous que le z-index soit supérieur à celui des autres éléments pour qu'il reste au-dessus */
+}
