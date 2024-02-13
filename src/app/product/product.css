@@ -1,0 +1,7 @@
+.card-img{
+    transition: transform 0.3s;
+    padding-top: 15px;
+}
+.card-img:hover{
+    transform: scale(1.1);
+}

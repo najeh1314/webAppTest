@@ -1,1 +1,8 @@
-
+#top-menu {
+    position: fixed; /* Utiliser 'fixed' au lieu de 'sticky' pour une fixation absolue */
+    top: 0;
+    z-index: 10;
+}
+#spacement{
+    height: 50px;
+}
