@@ -1,26 +1,32 @@
-<nav class="p-3" id="top-menu">
-  <ul class="nav nav-pills">   
-    <li *ngFor="let action of actions">
-      <button
-        (click)="setCurrentAction(action)"
-        routerLink="{{action.route}}"
-        [class]="action==currentAction?'btn btn-dark ms-1':'btn btn-outline-dark ms-1'"
-      > 
-        {{action.titl}}
-        <i class="bi bi-{{action.icon}}"></i>
-      </button>
-    </li>
-    <li>
-      <div class="col-12 ms-4">
-        <form class="form-inline d-flex my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0 ms-2" type="submit">Search</button>
-        </form> 
-    </div>
-    </li>
-  </ul>
-</nav>
-<div id="spacement"></div>
+
+<div class="row-nav row justify-content-between">
+  <div class="nav col-6 ms-5">
+    <ul class="nav nav-pills">   
+      <li *ngFor="let action of actions">
+        <button
+          (click)="setCurrentAction(action)"
+          routerLink="{{action.route}}"
+          [class]="action==currentAction?'btn btn-success ms-1':'btn btn-outline-success ms-1'"
+        > 
+          {{action.titl}}
+          <i class="bi bi-{{action.icon}}"></i>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="search col-3">
+    <form class="form-inline d-flex my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0 ms-2" type="submit">Search</button>
+    </form>
+  </div>
+  <div class="sign col-1">
+    <i class="icon bi-person-circle h3 opacity-75 text-success text-capitalize me-5"> </i>
+  </div>
+</div>
+<div id="spacement">
+        
+</div>
 <router-outlet>
 
 </router-outlet> 

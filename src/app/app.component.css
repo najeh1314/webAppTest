@@ -1,7 +1,10 @@
-#top-menu {
+.row-nav{
     position: fixed; /* Utiliser 'fixed' au lieu de 'sticky' pour une fixation absolue */
     top: 0;
     z-index: 10;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 #spacement{
     height: 50px;
