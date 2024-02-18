@@ -1,4 +1,4 @@
-.row-nav{
+.row-nav {
     position: fixed; /* Utiliser 'fixed' au lieu de 'sticky' pour une fixation absolue */
     top: 0;
     z-index: 10;

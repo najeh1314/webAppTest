@@ -1,0 +1,19 @@
+<div class="login row col-5 h-75 p-4 mt-4 text-success fs-6">
+    <form>
+        <div class="mb-3">
+          <label for="mail" class="form-label bg-light bg-opacity-75">Email address</label>
+          <input type="email" class="form-control" id="mail" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label bg-light bg-opacity-75">Password</label>
+          <input type="password" class="form-control" id="password">
+        </div>
+        <div class="mb-3 form-check ">
+          <input type="checkbox" class="form-check-input " id="check" (change)="changeCheck($event)">
+          <label class="form-check-label bg-light bg-opacity-75" for="check">Check me out</label>
+        </div>
+        <button id="btnSubmit" type="submit" class="btn btn-primary" [disabled]="!ischecked">Submit</button>
+      </form>
+
+</div>
