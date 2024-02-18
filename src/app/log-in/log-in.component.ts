@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './log-in.component.scss'
 })
 export class LogInComponent {
-  ischecked: boolean = false;
-  
+  ischecked:boolean = false;
+
   changeCheck(event: Event) {
     const target = event.target as HTMLInputElement; // Assertion de type
     this.ischecked = target.checked;
