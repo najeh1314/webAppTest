@@ -10,6 +10,7 @@ import { ComponContactComponent } from './compon-contact/compon-contact.componen
 import { Product } from './product/product';
 import { LogInComponent } from './log-in/log-in.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UserHelloComponent } from './user-hello/user-hello.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     ComponServicesComponent,
     ComponContactComponent,
     Product,
-    LogInComponent
+    LogInComponent,
+    UserHelloComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { ComponServicesComponent } from './compon-services/compon-services.compo
 import { ComponContactComponent } from './compon-contact/compon-contact.component';
 import { Product } from './product/product';
 import { LogInComponent } from './log-in/log-in.component';
+import { UserHelloComponent } from './user-hello/user-hello.component';
 
 const routes: Routes = [
   {path: "home", component:ComponHomeComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: "services", component:ComponServicesComponent},
   {path:"contact", component:ComponContactComponent},
   {path:"product", component:Product},
-  {path:"log-in", component:LogInComponent}
+  {path:"log-in", component:LogInComponent},
+  {path:"user-hello", component: UserHelloComponent}
 ];
 
 @NgModule({
