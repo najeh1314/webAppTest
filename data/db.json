@@ -72,17 +72,5 @@
             "cardTxt":"here you read about our product, it is a braef descreption for it. Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue. Un texte n'a pas de longueur déterminée sauf dans le cas de poèmes à forme fixe comme le sonnet ou le haïku",
             "cardTxtSmall":"This is an electronic device product!"
         }
-    ],
-    "users":[
-        {
-            "firstName": "Chaabani", "lastName": "Najeh", "userId": "najeh1314@yahoo.fr", "mdp":"najeh123"
-        },
-        {
-            "firstName": "Chaabani", "lastName": "Rabii", "userId": "rabii1314@yahoo.fr", "mdp":"rabii123"
-        },
-        {
-            "firstName": "Massoudi", "lastName": "Akrem", "userId": "massoudi1314@yahoo.fr", "mdp":"akrem123"
-        }
-
     ]
 }
