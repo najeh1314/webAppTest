@@ -9,6 +9,7 @@ import { ComponServicesComponent } from './compon-services/compon-services.compo
 import { ComponContactComponent } from './compon-contact/compon-contact.component';
 import { Product } from './product/product';
 import { LogInComponent } from './log-in/log-in.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LogInComponent } from './log-in/log-in.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration()
