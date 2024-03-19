@@ -1,0 +1,49 @@
+<nav class="p-3">
+        <!-- 
+        <ul class="nav nav-pills">
+        <li>
+            <button routerLink="app/home" class="btn btn-outline-success ms-1">
+                Home
+                <i class="bi bi-house text-success"></i>
+            </button>
+            
+        </li>
+        <li>
+            <button roungterLink ="\Products" class="btn btn-outline-success ms-1">
+                Products
+                <i class="bi bi-arrow-down-up text-success"></i>
+            </button>
+        </li>
+        <li>
+            <button routerLinks ="\newProduct" class="btn btn-outline-success ms-1">
+                New product
+                <i class="bi bi-plus-circle text-success"></i>
+            </button>
+        </li>
+    </ul>
+
+            Ce code ci dessus est remplacer par le code en bas
+                             .--.
+                             |  |
+                            \|  |/
+                             \  /
+                              \/
+    -->
+  <ul class="nav nav-pills">
+      <li *ngFor="let action of actions">
+        <button
+            (click)="setCurrentAction(action)"
+            routerLink="{{action.route}}"
+            [class]="action==currentAction 
+                        ?'btn btn-success ms-1': 'btn btn-outline-success ms-1'"
+        >
+            {{action.title}}
+            <i class="bi bi-{{action.icon}}"></i>
+        </button>
+      </li>
+  </ul>
+
+</nav>
+<router-outlet>
+
+</router-outlet>
